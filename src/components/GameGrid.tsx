@@ -31,9 +31,9 @@ export default function GameGrid({selectedGenre}:Props) {
               <GameCardSkeleton  />
             </GameCardContainer>
           ))}
-        {data.map((d) => (
-          <GameCardContainer key={d.id}>
-            <GameCard game={d} />
+        {data.map((game) => (
+          <GameCardContainer key={game.id}>
+            <GameCard game={game} />
           </GameCardContainer>
         ))}
       </SimpleGrid>
