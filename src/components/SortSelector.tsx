@@ -17,7 +17,7 @@ export default function SortSelecgtor({onSelectSortOrder, sortOrder}:Props) {
     { value: "-rating", label: "Average rating" },
   ]
 
-  const currentSortOrder = sortOrders.find(order=> order.value === sortOrder)
+  const currentSortOrder = sortOrders.find(order => order.value === sortOrder)
 
   return (
     <Menu>
