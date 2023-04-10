@@ -8,19 +8,19 @@ import {
   FaLinux,
   FaAndroid,
 } from "react-icons/fa"
-import { MdPhoneIphone } from "react-icons/md"
-import { SiNintendo } from "react-icons/si"
+import { MdPhoneIphone, MdOutlineCastConnected } from "react-icons/md"
+import { SiNintendo, SiSega, SiAtari, SiCommodore } from "react-icons/si"
 import { BsGlobe } from "react-icons/bs"
 import { IconType } from "react-icons"
 
 interface Props {
-  platforms: Platform[]  
+  platforms: Platform[]
 }
 
 export default function PlatformIconList({ platforms }: Props) {
   const iconMap: { [key: string]: IconType } = {
     pc: FaWindows,
-    platstation: FaPlaystation,
+    playstation: FaPlaystation,
     xbox: FaXbox,
     nintendo: SiNintendo,
     mac: FaApple,
@@ -28,6 +28,9 @@ export default function PlatformIconList({ platforms }: Props) {
     android: FaAndroid,
     ios: MdPhoneIphone,
     web: BsGlobe,
+    sega: SiSega,
+    atari: SiAtari,
+    commodore: SiCommodore,
   }
 
   return (
