@@ -18,8 +18,8 @@ interface Props {
 export default function GenreList({ onSelectGenre, selectedGenre }: Props) {
   const { data, error, loading } = useGenres()
 
-  if (error) return null
-  if (loading) return <Spinner />
+  // if (error) return null
+  // if (loading) return <Spinner />
   return (
     <>
       <Heading fontSize="2xl" marginBottom={3}>
