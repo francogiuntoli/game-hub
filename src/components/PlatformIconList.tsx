@@ -30,7 +30,7 @@ export default function PlatformIconList({ platforms }: Props) {
     web: BsGlobe,
     sega: SiSega,
     atari: SiAtari,
-    commodore: SiCommodore,
+    ["commodore-amiga"]: SiCommodore,
   }
 
   return (
